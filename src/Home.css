@@ -1,0 +1,64 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color:rgb(255, 137, 50);
+}
+
+.home__body{
+    flex: 1;
+    display: flex;
+    margin-top: 10%;
+    flex-direction: column;
+}
+
+.home__body > img{
+    object-fit: contain;
+    height: 250px;
+}
+
+  /* DEMO-SPECIFIC STYLES */
+  .typewriter h1 {
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /*Ensures the content is not revealed until the animation */
+    /* border-right: .15em solid white; The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    margin-left: auto;
+    margin-right: auto;
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white }
+  }
+
+
+
+  @media(max-width:437px){
+
+    .home__body{
+        margin-top: 25%;
+    }
+    .home__body img{
+        height: 150px;
+      }
+
+    .typewriter h1 {
+        font-size: 10px;
+    }
+  }
